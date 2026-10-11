@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+		<key>AfterInitialDemand</key>
+		<true/>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>OPT</key>
+		<string>ZSCALER</string>
+	</dict>
+	<key>ExitTimeOut</key>
+	<integer>10</integer>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Zscaler/Zscaler.app/Contents/PlugIns/ZscalerTunnel</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>/Library/Application Support/Zscaler/com.zscaler.ZscalerTunnel.log</string>
+	<key>StandardOutPath</key>
+	<string>/Library/Application Support/Zscaler/com.zscaler.ZscalerTunnelOut.log</string>
+	<key>Label</key>
+	<string>com.zscaler.tunnel</string>
+</dict>
+</plist>

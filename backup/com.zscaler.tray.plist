@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.zscaler.tray</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Zscaler/Zscaler.app/Contents/MacOS/Zscaler</string>
+	</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>OPT</key>
+		<string>ZSCALER</string>
+	</dict>
+	<key>ExitTimeOut</key>
+	<integer>4</integer>
+	<key>KeepAlive</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<false/>
+</dict>
+</plist>

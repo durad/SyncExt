@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.zscaler.service</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.zscaler.service-tray-communication</key>
+		<true/>
+	</dict>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>OPT</key>
+		<string>ZSCALER</string>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/Zscaler/Zscaler.app/Contents/PlugIns/ZscalerService</string>
+	</array>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>/Library/Application Support/Zscaler/com.zscaler.ZscalerService.log</string>
+	<key>StandardOutPath</key>
+	<string>/Library/Application Support/Zscaler/com.zscaler.ZscalerServiceOut.log</string>
+</dict>
+</plist>

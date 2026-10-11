@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.syncext.helper</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/dusan/.nvm/versions/node/v26.11.1/bin/node</string>
+    <string>/Users/dusan/dev/syncext/server.js</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/dusan/dev/syncext</string>
+
+  <key>UserName</key>
+  <string>root</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/dusan/.nvm/versions/node/v26.11.1/bin:/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key>
+    <string>/var/root</string>
+    <key>HOST</key>
+    <string>127.0.0.1</string>
+    <key>PORT</key>
+    <string>4252</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+
+  <key>StandardOutPath</key>
+  <string>/var/log/syncext_out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/var/log/syncext_err.log</string>
+</dict>
+</plist>
