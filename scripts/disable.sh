@@ -48,4 +48,6 @@ launchctl disable system/com.zscaler.UPMServiceController.plist
 launchctl bootout system /Library/LaunchDaemons/com.zscaler.UPMServiceController.plist
 rm /Library/LaunchDaemons/com.zscaler.UPMServiceController.plist
 
+launchctl list | grep -i zscaler | awk '{print $3}' | xargs -I{} launchctl disable "system/{}"
+launchctl list | grep -i zscaler | awk '{print $1}' | xargs -I{} kill -9 "{}"
 
