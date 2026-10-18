@@ -7,7 +7,7 @@
 
   <key>ProgramArguments</key>
   <array>
-    <string>/Users/dusan/.nvm/versions/node/v26.11.1/bin/node</string>
+    <string>/Users/dusan/dev/syncext/node</string>
     <string>/Users/dusan/dev/syncext/server.js</string>
   </array>
 
